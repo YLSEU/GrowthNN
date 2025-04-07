@@ -1,8 +1,8 @@
 from torchvision import datasets, transforms
-from utils import Cutout
+from .cutout import Cutout
 
 
-def get_data(size):
+def get_cifar10(size):
 	train_transform = transforms.Compose(
 		[
 			transforms.RandomCrop(size, padding=4),
@@ -22,4 +22,3 @@ def get_data(size):
 	num_class = 10
 
 	return train_dataset, test_dataset
-
