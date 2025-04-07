@@ -1,6 +1,6 @@
 import torch
 
-from utils import get_module, get_mean_std
+from utils import get_module
 import models
 from datas.cifar10 import get_data
 from torch.utils.data import DataLoader
